@@ -25,3 +25,5 @@ if e == "o" :
 else :
     time.sleep(0.6)
     print(f"Il faut vous y mettre, {b}. ")
+time.sleep(3)
+print("script réalisé en 7m36s")
