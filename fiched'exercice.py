@@ -12,13 +12,13 @@ else:
 time.sleep(10)
 
 #Script no.2
-mot_de_passe = input("Veuillez saisir votre mot de passe : ")
-confirmation = input("Veuillez confirmer votre mot de passe : ")
+mot_de_passe = input("Veuillez saisir votre mot de passe : ") # première tentative de l'utilisateur
+confirmation = input("Veuillez confirmer votre mot de passe : ") # <--- confirmation pour plus de réalisme
 
 if mot_de_passe == confirmation:
-    if len(mot_de_passe) >= 8:
+    if len(mot_de_passe) >= 8: # fait en sorte que le mot de passe fait plus de 8 caractères 
         print("Succès : Le mot de passe a été créé avec succès !")
     else:
         print("Erreur : Le mot de passe doit contenir au moins 8 caractères.")
 else:
-    print("Erreur : Les deux saisies ne sont pas identique.")
+    print("Erreur : Les deux saisies ne sont pas identique.") #  si la confirmation n'est pas égale au mot de passe alors erreur montrée
