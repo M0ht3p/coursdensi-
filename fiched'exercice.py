@@ -9,7 +9,7 @@ else:
     print(f"{annee} n'est pas une année bissextile.") # retourne "n'est pas une année bissextile" si les critères des calcul ne sont pas rencontrés
 
 
-time.sleep(10)
+time.sleep(4)
 
 #Script no.2
 mot_de_passe = input("Veuillez saisir votre mot de passe : ") # première tentative de l'utilisateur
