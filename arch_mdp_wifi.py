@@ -149,4 +149,4 @@ if __name__ == "__main__":
     controller = CLIController()
     controller.run()
 
-# Made by M0ht3p on VSCodium
+# Made by M0ht3p on VSCodium for the NSI repo
