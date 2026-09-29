@@ -3,7 +3,7 @@ from random import random
 
 rnd = random()
 
-for x in range(4, -1, -1) :
+for x in range(3, -1, -1) :
     print(f"{x}...", end = "    ", flush=True)
     sleep(1)
     
