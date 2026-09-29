@@ -1,4 +1,4 @@
-import subprocess
+from subprocess import *
 
 profiles = subprocess.check_output("netsh wlan show profiles", shell=True).decode()
 names = [line.split(":")[1].strip() for line in profiles.split("\n") if "All User Profile" in line]
@@ -21,3 +21,5 @@ if password_line:
     print(f"\nPassword: {password}")
 else:
     print("\nPassword: No password found or profile is open.")
+
+# Made by M0ht3p
