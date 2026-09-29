@@ -4,7 +4,7 @@ from random import random
 rnd = random()
 
 for x in range(4) :
-    print(f"{x}...", end = "    ")
+    print(f"{x}...", end = "    ", flush=True)
     sleep(1)
     
 if rnd < 0.01 :
