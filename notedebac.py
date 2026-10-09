@@ -23,13 +23,14 @@ def recupnote(liste1) :
         note = float(input(f"Ta note en {matiere} : "))
         notes.append(note)
         sleep(0.2)
+        return notes
 
 notes = recupnote(liste_matières)
 
 def calcul_notedebac(liste_notes, liste_coefs) :
     somme = 0
     somme_coefs = 0
-    for i in range(19) :
+    for i in range(len(liste_notes)) :
         somme = somme + liste_notes[i] * liste_coefs[i]
         somme_coefs = somme_coefs + liste_coefs[i]
     return somme / somme_coefs
