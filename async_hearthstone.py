@@ -7,7 +7,7 @@ async def main() :
         print(f"{x}...", end = '   ', flush=True)
         await asyncio.sleep(1)
     rnd = random()
-    choix = input("Est ce que tu veux faire un tirage de cartes? o/n : ")
+    choix = input("Est ce que tu veux faire un tirage de cartes? o/n : ").strip().lower()
     if choix == "n" :
         ex()
     elif choix == "o" :
