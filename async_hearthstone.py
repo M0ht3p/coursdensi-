@@ -20,6 +20,6 @@ async def main() :
         else :
             print("Carte commune")
     else :
-        run(main())
+        print(choix)
               
 run(main())
