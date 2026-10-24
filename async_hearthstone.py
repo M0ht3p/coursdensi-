@@ -1,11 +1,11 @@
 from sys import exit as ex
 from random import random
-import asyncio
+from asyncio import sleep, run
 
 async def main() :
     for sa in range(3, -1, -1):
         print(f"{sa}...", end = '   ', flush=True)
-        await asyncio.sleep(1)
+        await sleep(1)
     rnd = random()
     choix = input("Est ce que tu veux faire un tirage de cartes? o/n : ").strip().lower()
     if choix == "n" :
@@ -20,6 +20,6 @@ async def main() :
         else :
             print("Carte commune")
     else :
-        print(choix)
-
-asyncio.run(main())
+        run(main())
+              
+run(main())
